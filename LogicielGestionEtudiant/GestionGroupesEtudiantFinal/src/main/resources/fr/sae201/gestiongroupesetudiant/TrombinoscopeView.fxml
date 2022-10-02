@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sae201.gestiongroupesetudiant.controllers.TrombinoscopeController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="130.0" layoutY="111.0" pannable="true" prefHeight="462.0" prefWidth="654.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="666.0" />
+         </content>
+      </ScrollPane>
+      <Pane prefHeight="584.0" prefWidth="120.0" style="-fx-background-color: cf0c7c cf0c7c;">
+         <children>
+            <Button layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#listeEtuOnClick" prefHeight="34.0" prefWidth="100.0" text="Liste étudiants" />
+            <Button layoutX="10.0" layoutY="207.0" mnemonicParsing="false" onAction="#groupesOnClick" prefHeight="34.0" prefWidth="100.0" text="Groupes" />
+            <Button layoutX="10.0" layoutY="252.0" mnemonicParsing="false" onAction="#infosOnClick" prefHeight="34.0" prefWidth="100.0" text="Informations" />
+            <Button layoutX="10.0" layoutY="161.0" mnemonicParsing="false" onAction="#trombiOnClick" prefHeight="34.0" prefWidth="100.0" text="Trombinoscope" />
+            <Button layoutX="10.0" layoutY="319.0" mnemonicParsing="false" onAction="#disconnectOnClick" prefHeight="34.0" prefWidth="100.0" text="Déconnexion" />
+         </children>
+      </Pane>
+      <Pane prefHeight="101.0" prefWidth="800.0" style="-fx-background-color: #253979#253979 #253979#253979;">
+         <children>
+            <Label layoutX="40.0" layoutY="36.0" text="Trombinoscope" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="promoMenu" layoutX="409.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Toutes promos" />
+            <MenuButton fx:id="statutMenu" layoutX="274.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Tous statuts" />
+            <Button fx:id="imprimerAppelBtn" layoutX="647.0" layoutY="15.0" mnemonicParsing="false" onAction="#imprimerAppelOnClick" prefHeight="25.0" prefWidth="142.0" text="Imprimer Appel" />
+         </children>
+      </Pane>
+      <MenuButton fx:id="tdMenu" layoutX="274.0" layoutY="49.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Tous TD" />
+      <MenuButton fx:id="tpMenu" layoutX="408.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Tous TP" />
+      <Button layoutX="551.0" layoutY="47.0" mnemonicParsing="false" onAction="#filtrerOnClick" prefHeight="25.0" prefWidth="90.0" text="Filtrer" />
+      <Button layoutX="648.0" layoutY="47.0" mnemonicParsing="false" onAction="#rechargerDonneesOnClick" text="Recharger les données" />
+   </children>
+</Pane>

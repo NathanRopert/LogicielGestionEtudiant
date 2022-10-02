@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sae201.gestiongroupesetudiant.controllers.ModifierEtudiantController">
+   <children>
+      <Pane prefHeight="102.0" prefWidth="583.0" style="-fx-background-color: tomato;">
+         <children>
+            <Label layoutX="196.0" layoutY="62.0" text="Le Mans Université" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="62.0" layoutX="273.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo_iut.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="titreLabel" layoutX="146.0" layoutY="115.0" text="Modifier l'étudiant - ROPERTO NATHANO" underline="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="153.0" text="Numero :" />
+      <TextField fx:id="numTextField" layoutX="125.0" layoutY="149.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="82.0" layoutY="192.0" text="Nom :" />
+      <TextField fx:id="nomTextField" layoutX="125.0" layoutY="188.0" prefHeight="25.0" prefWidth="151.0" />
+      <Label layoutX="66.0" layoutY="233.0" text="Prénom :" />
+      <TextField fx:id="prenomTextField" layoutX="124.0" layoutY="229.0" prefHeight="25.0" prefWidth="152.0" />
+      <Label layoutX="75.0" layoutY="275.0" prefHeight="17.0" prefWidth="47.0" text="Statut :" />
+      <TextField fx:id="statutTextField" layoutX="124.0" layoutY="271.0" prefHeight="25.0" prefWidth="153.0" />
+      <Label layoutX="74.0" layoutY="313.0" text="Photo :" />
+      <Label layoutX="46.0" layoutY="348.0" text="Promotion :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="promoMenu" layoutX="123.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="BUT" />
+      <Label layoutX="46.0" layoutY="385.0" text="Groupe TP :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="groupeTpMenu" layoutX="121.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="TP11A" />
+      <Label layoutX="327.0" layoutY="162.0" prefHeight="17.0" prefWidth="234.0" text="Description des aménagements :" />
+      <TextArea fx:id="descAmTextField" layoutX="304.0" layoutY="184.0" prefHeight="200.0" prefWidth="257.0" />
+      <Button layoutX="444.0" layoutY="445.0" mnemonicParsing="false" onAction="#modifierEtudiantOnClick" text="Enregistrer et fermer" />
+      <Label layoutX="304.0" layoutY="394.0" text="Mot de passe :" />
+      <TextField fx:id="motDePasseTextField" layoutX="393.0" layoutY="390.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="nomPhotoTextField" layoutX="124.0" layoutY="309.0" prefHeight="25.0" prefWidth="153.0" />
+   </children>
+</Pane>

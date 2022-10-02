@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sae201.gestiongroupesetudiant.controllers.GroupesController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="120.0" layoutY="101.0" pannable="true" prefHeight="482.0" prefWidth="682.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="483.0" prefWidth="679.0" />
+        </content>
+      </ScrollPane>
+      <Pane prefHeight="584.0" prefWidth="120.0" style="-fx-background-color: cf0c7c cf0c7c;">
+         <children>
+            <Button fx:id="modifierBtn" disable="true" layoutX="14.0" layoutY="518.0" mnemonicParsing="false" onAction="#modifierOnClick" prefHeight="44.0" prefWidth="90.0" text="Modifier étudiant" visible="false" wrapText="true" />
+            <Button layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#listeEtuOnClick" prefHeight="34.0" prefWidth="100.0" text="Liste étudiants" />
+            <Button layoutX="10.0" layoutY="207.0" mnemonicParsing="false" onAction="#groupesOnClick" prefHeight="34.0" prefWidth="100.0" text="Groupes" />
+            <Button layoutX="10.0" layoutY="252.0" mnemonicParsing="false" onAction="#infosOnClick" prefHeight="34.0" prefWidth="100.0" text="Informations" />
+            <Button layoutX="10.0" layoutY="161.0" mnemonicParsing="false" onAction="#trombiOnClick" prefHeight="34.0" prefWidth="100.0" text="Trombinoscope" />
+            <Button layoutX="10.0" layoutY="319.0" mnemonicParsing="false" onAction="#disconnectOnClick" prefHeight="34.0" prefWidth="100.0" text="Déconnexion" />
+            <Button fx:id="ajouterGroupeTdBtn" layoutX="14.0" layoutY="416.0" mnemonicParsing="false" onAction="#ajouterGroupeTdOnClick" prefHeight="44.0" prefWidth="90.0" text="Créer un groupe TD" visible="false" wrapText="true" />
+            <Button fx:id="ajouterGroupeTpBtn" layoutX="14.0" layoutY="467.0" mnemonicParsing="false" onAction="#ajouterGroupeTpOnClick" prefHeight="44.0" prefWidth="90.0" text="Créer un groupe TP" visible="false" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane prefHeight="101.0" prefWidth="802.0" style="-fx-background-color: #253979#253979 #253979#253979;">
+         <children>
+            <Label layoutX="46.0" layoutY="36.0" text="Groupes" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="erreurLabel" alignment="CENTER" layoutX="195.0" layoutY="29.0" prefHeight="44.0" prefWidth="301.0" text="Erreur : Le groupe à supprimer ne doit pas contenir d'étudiants !" textFill="#ff5c5c" visible="false" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

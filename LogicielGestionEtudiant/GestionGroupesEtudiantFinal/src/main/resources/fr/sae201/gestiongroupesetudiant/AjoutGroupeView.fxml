@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="140.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.sae201.gestiongroupesetudiant.controllers.AjoutGroupeController">
+    <children>
+        <Pane prefHeight="201.0" prefWidth="278.0">
+            <children>
+                <Pane prefHeight="51.0" prefWidth="278.0" style="-fx-background-color: tomato;">
+                    <children>
+                        <Label layoutX="81.0" layoutY="15.0" text="Créer un groupe" textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <TextField fx:id="nomGroupeTextField" layoutX="20.0" layoutY="90.0" promptText="Écrivez" />
+                <Button layoutX="215.0" layoutY="160.0" mnemonicParsing="false" onAction="#ajouterGroupeOnClick" text="Créer" />
+                <MenuButton fx:id="tdParentMenu" layoutX="20.0" layoutY="124.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="TD parent" />
+                <Label fx:id="titreLabel" layoutX="20.0" layoutY="68.0" text="Nom du groupe TP :" />
+            <TextField fx:id="nomGroupeTpTextField" layoutX="20.0" layoutY="142.0" promptText="Écrivez" visible="false" />
+            <Label fx:id="titre2Label" layoutX="20.0" layoutY="121.0" text="Nom du 1er groupe TP :" visible="false" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
